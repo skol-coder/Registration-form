@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <div id="form">
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <table>
+      <tr>
+      <th></th>
+      <th></th>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" name="name" id="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" name="email" id="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+        <td><input type="number" name="age" id="age" min="1" max="200" step="5"></td>
+      </tr>
+      <tr>
+        <td><label for="date">Birthdate</label></td>
+        <td><input type="date" name="date" id="date" min="2019-06-10"></td>
+      </tr>
+      <tr>
+        <td>Gender &nbsp;</td>
+          <td><input type="radio" name="gender" id="male" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label></td>    
+      </tr>
+      <tr>
+        <td><label for="phone">Phone</label></td>
+        <td><input type="tel" name="phone" id="phone"></td>
+      </tr>
+      <tr>
+        <label>
+          <td>Address</td>
+          <td><input type="text" name="address" required></td>
+        </label>
+      </tr>
+      <tr>
+        <td><button type="submit">Submit</button></td>
+        <td><button type="reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+  </div>    
+</body>
+</html>
